@@ -21,7 +21,6 @@ def largestPrimeFactor(n):
                     if (not i) in factors:
                         factors.append(i)
                         factors.append(val/i)
-    print primes
     primes.sort()
     return primes[len(primes)-1]
 
@@ -32,5 +31,4 @@ def isPrime(n):
     return True
 
 if __name__ == "__main__":
-    #print(solve(13195))
     print(largestPrimeFactor(600851475142))
