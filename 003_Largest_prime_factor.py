@@ -1,5 +1,5 @@
 # Returns the largest prime factor of :n:
-def largestPrimeFactor(n):
+def largest_prime_factor(n):
     primes = [] #possible results
     factors = [] #factors of n, and their factors, and...
 
@@ -11,7 +11,7 @@ def largestPrimeFactor(n):
 
     #for all possible factors, check
     for val in factors:
-        if (not (val in primes)) and (isPrime(val)):
+        if (not (val in primes)) and (is_prime(val)):
             primes.append(val)
         else:
             #add all factors of val - which apparently extends the for loop *success*
@@ -25,7 +25,7 @@ def largestPrimeFactor(n):
     return primes[0]
 
 #TODO: make this more efficient for fun :)
-def isPrime(n):
+def is_prime(n):
     #no possible factors after sqrt(n)
     for i in range(2, int(n**0.5)+1):
         if n % i == 0:
@@ -33,4 +33,4 @@ def isPrime(n):
     return True
 
 if __name__ == "__main__":
-    print(largestPrimeFactor(600851475142))
+    print(largest_prime_factor(600851475142))

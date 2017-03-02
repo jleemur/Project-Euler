@@ -1,5 +1,5 @@
 # Count multiples of :mult1: and :mult2: from 3 to :range:
-def sumMultiples(mult1, mult2, upperLimit):
+def sum_multiples(mult1, mult2, upperLimit):
     sum = 0
     # O(n)
     for i in range(min(mult1, mult2), upperLimit):
@@ -8,4 +8,4 @@ def sumMultiples(mult1, mult2, upperLimit):
     return sum
 
 if __name__ == "__main__":
-    print(sumMultiples(3, 5, 1000)) #all multiples of 3 & 5 BELOW 1000
+    print(sum_multiples(3, 5, 1000)) #all multiples of 3 & 5 BELOW 1000
