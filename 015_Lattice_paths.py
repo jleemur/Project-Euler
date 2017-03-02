@@ -3,7 +3,7 @@ from fractions import Fraction
 
 ###
 # Method 1: combinatorics
-def get_lattice_paths_1(n, m):
+def get_lattice_paths(n, m):
   return nCr(n+m, n)
 
 def nCr(n, r):
@@ -49,6 +49,6 @@ def recur_lattice_paths(n, m, down, right, sum):
 
 if __name__ == "__main__":
     # n, m grid
-    print(get_lattice_paths_1(20, 20))
+    print(get_lattice_paths(20, 20))
     print(get_lattice_paths_2(20, 20))
     #print(get_lattice_paths_3(20, 20))
