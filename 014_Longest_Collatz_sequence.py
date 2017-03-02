@@ -1,5 +1,5 @@
 ## if n==even: n/2, if n==odd: 3n+1... stop when n==1
-def find_longest_collatz_sequence(n):
+def get_longest_collatz_sequence(n):
     dict = {1: 1} #{value: collatz sequence from value}
     max_chain = 1
 
@@ -28,4 +28,4 @@ def find_longest_collatz_sequence(n):
 
 
 if __name__ == "__main__":
-    print(find_longest_collatz_sequence(1000000))
+    print(get_longest_collatz_sequence(1000000))
