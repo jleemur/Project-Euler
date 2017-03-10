@@ -1,6 +1,7 @@
 # Returns the 10 left-most digits of the sum of n_arr
 def get_large_sum(n_arr):
     sum = 0L
+    # go through loop and add numbers together... so innovative
     for i in n_arr:
         sum += i
     return str(sum)[:10]
